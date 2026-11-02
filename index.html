@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Ruang MBTI adalah tempat untuk mengenal 16 tipe kepribadian, memahami diri sendiri, dan mempelajari cara berinteraksi dengan orang lain.">
+
+    <title>Ruang MBTI (ASW)— Discover Your Personality</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+<header class="navbar">
+    <a href="#home" class="logo">
+        <span class="logo-mark">R</span>
+        <span>ruang<span class="logo-accent">mbti</span></span>
+    </a>
+
+    <button class="menu-toggle" id="menuToggle"
+        aria-label="Buka menu navigasi"
+        aria-expanded="false">☰</button>
+
+    <nav class="nav-links" id="navLinks">
+        <a href="#home">Beranda</a>
+        <a href="#about">Tentang MBTI</a>
+        <a href="#types">16 Kepribadian</a>
+        <a href="#learning">Tips Belajar</a>
+        <a href="#quiz" class="nav-cta">Coba Kuis ↗</a>
+    </nav>
+</header>
+
+<main>
+
+    <!-- HERO -->
+    <section class="hero section" id="home">
+        <div class="hero-content">
+            <div class="eyebrow">
+                <span class="status-dot"></span>
+                YOUR PERSONALITY EXPLORATION SPACE
+            </div>
+
+            <h1>
+                Discover Your<br>
+                <span class="highlight">Personality.</span>
+            </h1>
+
+            <p class="hero-description">
+                Setiap orang punya cara unik untuk berpikir, merasakan,
+                dan melihat dunia. Yuk, kenali dirimu dan pahami orang
+                lain dengan lebih baik!
+            </p>
+
+            <div class="hero-actions">
+                <a href="#types" class="button button-primary">
+                    Jelajahi 16 Tipe <span>↗</span>
+                </a>
+
+                <a href="#about" class="button button-secondary">
+                    Kenali MBTI
+                </a>
+            </div>
+
+            <div class="hero-note">
+                <span>✳</span>
+                Mengenal diri adalah sebuah perjalanan, bukan perlombaan.
+            </div>
+        </div>
+
+        <div class="hero-visual" aria-label="Ilustrasi abstrak kepribadian">
+            <div class="orbit orbit-one"></div>
+            <div class="orbit orbit-two"></div>
+
+            <div class="floating-card floating-card-top">
+                <span class="floating-icon coral-icon">✳</span>
+                <div>
+                    <strong>Think differently.</strong>
+                    <small>Your perspective matters.</small>
+                </div>
+            </div>
+
+            <div class="hero-art">
+                <div class="art-circle circle-one"></div>
+                <div class="art-circle circle-two"></div>
+                <div class="art-circle circle-three"></div>
+                <div class="art-center">YOU<br><span>✦</span></div>
+            </div>
+
+            <div class="floating-card floating-card-bottom">
+                <span class="floating-icon green-icon">↗</span>
+                <div>
+                    <strong>Grow at your pace.</strong>
+                    <small>There is no single right way.</small>
+                </div>
+            </div>
+
+            <span class="decor decor-star">✳</span>
+            <span class="decor decor-plus">+</span>
+        </div>
+    </section>
+
+    <!-- INTRODUCTION -->
+    <section class="intro-strip">
+        <div>
+            <span class="strip-number">01</span>
+            <strong>Understand yourself</strong>
+        </div>
+        <span class="strip-divider"></span>
+        <div>
+            <span class="strip-number">02</span>
+            <strong>Appreciate differences</strong>
+        </div>
+        <span class="strip-divider"></span>
+        <div>
+            <span class="strip-number">03</span>
+            <strong>Keep growing</strong>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section about-section" id="about">
+        <div class="section-heading">
+            <span class="section-label">A LITTLE INTRODUCTION</span>
+            <h2>Apa itu <span class="highlight">MBTI?</span></h2>
+            <p>
+                MBTI adalah salah satu kerangka untuk memahami preferensi
+                kepribadian. MBTI membagi preferensi menjadi empat pasangan
+                dimensi yang membentuk 16 tipe.
+            </p>
+        </div>
+
+        <div class="dimension-grid">
+            <article class="dimension-card">
+                <span class="dimension-letter">E / I</span>
+                <h3>Energi & Interaksi</h3>
+                <p><strong>E — Extraversion:</strong> cenderung berenergi melalui interaksi dengan dunia luar.</p>
+                <p><strong>I — Introversion:</strong> cenderung menyukai waktu untuk refleksi dan dunia internal.</p>
+            </article>
+
+            <article class="dimension-card">
+                <span class="dimension-letter">S / N</span>
+                <h3>Cara Memperhatikan Informasi</h3>
+                <p><strong>S — Sensing:</strong> cenderung memperhatikan fakta dan detail konkret.</p>
+                <p><strong>N — Intuition:</strong> cenderung memperhatikan pola, kemungkinan, dan gambaran besar.</p>
+            </article>
+
+            <article class="dimension-card">
+                <span class="dimension-letter">T / F</span>
+                <h3>Cara Mempertimbangkan Pilihan</h3>
+                <p><strong>T — Thinking:</strong> cenderung mempertimbangkan logika dan konsistensi.</p>
+                <p><strong>F — Feeling:</strong> cenderung mempertimbangkan nilai dan dampak pada orang.</p>
+            </article>
+
+            <article class="dimension-card">
+                <span class="dimension-letter">J / P</span>
+                <h3>Cara Mengatur Aktivitas</h3>
+                <p><strong>J — Judging:</strong> cenderung menyukai rencana dan struktur.</p>
+                <p><strong>P — Perceiving:</strong> cenderung menyukai fleksibilitas dan pilihan terbuka.</p>
+            </article>
+        </div>
+
+        <div class="notice-box">
+            <span class="notice-icon">ⓘ</span>
+            <p>
+                <strong>Perlu diingat:</strong> MBTI bukan diagnosis psikologis
+                atau ukuran kecerdasan. Tipe tidak menentukan seluruh sifat,
+                kemampuan, atau masa depan seseorang. Setiap individu tetap unik.
+            </p>
+        </div>
+    </section>
+
+    <!-- PERSONALITY TYPES -->
+    <section class="section types-section" id="types">
+        <div class="section-heading">
+            <span class="section-label">FIND YOUR TYPE</span>
+            <h2>Meet the <span class="highlight">16 types.</span></h2>
+            <p>
+                Empat kelompok, enam belas perspektif, dan banyak cara
+                berbeda untuk memahami dunia.
+            </p>
+        </div>
+
+        <div class="type-tools">
+            <label class="search-box">
+                <span aria-hidden="true">⌕</span>
+                <input id="searchType" type="search"
+                    placeholder="Cari kode atau nama kepribadian..."
+                    aria-label="Cari tipe kepribadian">
+            </label>
+
+            <div class="filter-list" id="filterList">
+                <button class="filter-button active" data-filter="all">Semua</button>
+                <button class="filter-button" data-filter="analysts">Analysts</button>
+                <button class="filter-button" data-filter="diplomats">Diplomats</button>
+                <button class="filter-button" data-filter="sentinels">Sentinels</button>
+                <button class="filter-button" data-filter="explorers">Explorers</button>
+            </div>
+        </div>
+
+        <div class="type-grid" id="typeGrid" aria-live="polite"></div>
+
+        <p class="section-footnote">
+            Deskripsi di sini merupakan gambaran umum, bukan aturan mutlak
+            tentang siapa dirimu.
+        </p>
+    </section>
+
+    <!-- LEARNING -->
+    <section class="section learning-section" id="learning">
+        <div class="learning-copy">
+            <span class="section-label">LEARN YOUR WAY</span>
+            <h2>Temukan cara belajar yang <span class="highlight">lebih cocok.</span></h2>
+
+            <p>
+                Setiap orang bisa memiliki kebiasaan dan kebutuhan belajar
+                yang berbeda. Gunakan ide berikut sebagai eksperimen,
+                bukan sebagai batas kemampuanmu.
+            </p>
+
+            <a href="#quiz" class="button button-primary">
+                Coba Kuis Kepribadian ↗
+            </a>
+        </div>
+
+        <div class="learning-cards">
+            <article class="learning-card">
+                <span class="learning-icon pink-bg">01</span>
+                <div>
+                    <h3>Belajar Aktif</h3>
+                    <p>Coba latihan soal, diskusi, atau menjelaskan kembali materi dengan kata-katamu sendiri.</p>
+                </div>
+            </article>
+
+            <article class="learning-card">
+                <span class="learning-icon green-bg">02</span>
+                <div>
+                    <h3>Atur Ritme</h3>
+                    <p>Bagi materi menjadi bagian kecil dan gunakan jeda singkat agar belajar terasa lebih terkelola.</p>
+                </div>
+            </article>
+
+            <article class="learning-card">
+                <span class="learning-icon cream-bg">03</span>
+                <div>
+                    <h3>Eksplorasi Metode</h3>
+                    <p>Gabungkan catatan, gambar, membaca, praktik, dan latihan untuk menemukan cara yang efektif bagimu.</p>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- FUN FACT -->
+    <section class="section fact-section" id="facts">
+        <div class="fact-card">
+            <div class="fact-decoration">✳</div>
+
+            <div class="fact-content">
+                <span class="section-label">A LITTLE SOMETHING TO KNOW</span>
+                <h2>Personality <span class="highlight">notes.</span></h2>
+                <p id="factText" aria-live="polite">
+                    Memuat fakta menarik...
+                </p>
+
+                <button class="button button-secondary" id="nextFact">
+                    Fakta berikutnya <span>↻</span>
+                </button>
+            </div>
+
+            <div class="fact-side">
+                <span class="fact-big-icon">✦</span>
+                <span>KEEP AN OPEN MIND</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- QUIZ -->
+    <section class="section quiz-section" id="quiz">
+        <div class="section-heading">
+            <span class="section-label">A MOMENT FOR YOURSELF</span>
+            <h2>Let's explore <span class="highlight">you.</span></h2>
+            <p>
+                Jawab berdasarkan kecenderunganmu. Tidak ada jawaban
+                benar atau salah.
+            </p>
+        </div>
+
+        <div class="quiz-card" id="quizContainer">
+            <div class="quiz-topline">
+                <span id="questionCounter">Pertanyaan 1</span>
+                <span id="quizProgressText">0% selesai</span>
+            </div>
+
+            <div class="progress-track">
+                <div class="progress-fill" id="quizProgress"></div>
+            </div>
+
+            <h3 id="questionText">Pertanyaan akan muncul di sini.</h3>
+
+            <div class="answer-options" id="answerOptions"></div>
+
+            <p class="quiz-feedback" id="quizFeedback" aria-live="polite"></p>
+
+            <div class="quiz-controls">
+                <button class="button button-secondary" id="restartQuiz" hidden>
+                    Ulangi kuis
+                </button>
+
+                <button class="button button-primary" id="nextQuestion" disabled>
+                    Lanjut <span>→</span>
+                </button>
+            </div>
+
+            <p class="quiz-disclaimer">
+                Kuis ini hanya alat refleksi sederhana dan bukan tes MBTI resmi.
+            </p>
+        </div>
+    </section>
+
+    <!-- CREATOR -->
+    <section class="section creator-section" id="creator">
+        <div class="creator-card">
+            <div class="creator-symbol">R.</div>
+
+            <div class="creator-copy">
+                <span class="section-label">BEHIND THE WEBSITE</span>
+                <h2>A space made for <span class="highlight">curiosity.</span></h2>
+                <p>
+                    Ruang MBTI dibuat sebagai tempat untuk mengeksplorasi
+                    kepribadian, belajar memahami perbedaan, dan mengenal
+                    diri sendiri dengan lebih terbuka.
+                </p>
+            </div>
+
+            <form id="creatorForm" class="creator-form">
+                <h3>Kenalan dengan pembuatnya!</h3>
+
+                <label for="creatorName">Nama panggilan</label>
+                <input id="creatorName" type="text"
+                    placeholder="Nama panggilanmu" maxlength="50" required>
+
+                <label for="creatorHobby">Hobi</label>
+                <input id="creatorHobby" type="text"
+                    placeholder="Misalnya: membaca, menggambar" maxlength="100">
+
+                <label for="creatorAbout">Sedikit tentang dirimu</label>
+                <textarea id="creatorAbout"
+                    placeholder="Ceritakan sedikit tentang dirimu..."
+                    rows="3" maxlength="300"></textarea>
+
+                <button class="button button-primary" type="submit">
+                    Tampilkan Profil ↗
+                </button>
+
+                <div id="creatorResult" class="creator-result" aria-live="polite"></div>
+            </form>
+        </div>
+    </section>
+
+</main>
+
+<footer class="footer">
+    <a href="#home" class="logo footer-logo">
+        <span class="logo-mark">R</span>
+        <span>ruang<span class="logo-accent">mbti</span></span>
+    </a>
+
+    <p>Discover Your Personality.</p>
+
+    <p class="footer-note">
+        Dibuat untuk eksplorasi dan pembelajaran. MBTI tidak mendefinisikan
+        seluruh dirimu.
+    </p>
+
+    <a href="#home" class="back-top">Kembali ke atas ↑</a>
+</footer>
+
+<!-- TYPE DETAIL DIALOG -->
+<dialog id="typeDialog" class="type-dialog">
+    <button id="closeDialog" class="dialog-close"
+        aria-label="Tutup detail">×</button>
+    <div id="typeDetail"></div>
+</dialog>
+
+</body>
+</html>
